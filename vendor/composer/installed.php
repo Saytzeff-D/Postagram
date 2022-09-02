@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'a5293d08240b972ee5463606947e41db4a36b17e',
+        'reference' => '2d572ee0efb82c57acc2d0ffe0f256fa05acb230',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'a5293d08240b972ee5463606947e41db4a36b17e',
+            'reference' => '2d572ee0efb82c57acc2d0ffe0f256fa05acb230',
             'dev_requirement' => false,
         ),
         'symfony/dotenv' => array(
