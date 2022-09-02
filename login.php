@@ -1,6 +1,5 @@
 <?php
     session_start();
-    header('login.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
