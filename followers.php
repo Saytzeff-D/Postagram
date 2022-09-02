@@ -1,7 +1,7 @@
 <?php
     session_start();
     include 'env.config.php';
-    $connnection = new mysqli($_ENV['SERVER'], $_ENV['USERNAME'], '', $_ENV['DB']);
+    $connnection = new mysqli($_ENV['SERVER'], $_ENV['USERNAME'], $_ENV['PASSWORD'], $_ENV['DB']);
     $user_id =  $_SESSION['passId'];
     if ($user_id == '') {
         header('Location: login.php');

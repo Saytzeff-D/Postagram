@@ -6,7 +6,7 @@
         public $connect;
         public function __construct()
         {
-            $this->connect = new mysqli($_ENV['SERVER'], $_ENV['USERNAME'], '', $_ENV['DB']);
+            $this->connect = new mysqli($_ENV['SERVER'], $_ENV['USERNAME'], $_ENV['PASSWORD'], $_ENV['DB']);
             if ($this->connect->connect_error) {
                 header('Location: signup.php');
                 $_SESSION['connectError'] = 'Error! No connection';
