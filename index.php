@@ -1,6 +1,6 @@
 <?php
 
-    require_once('env.config.php');
+    // require_once('env.config.php');
 
     class Connection {
         public $connect;

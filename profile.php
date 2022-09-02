@@ -1,5 +1,5 @@
 <?php
-    include_once('env.config.php');
+    // include_once('env.config.php');
     session_start();
     $connnection = new mysqli($_ENV['SERVER'], $_ENV['USERNAME'], '', $_ENV['DB']);
 
