@@ -21,9 +21,9 @@
     </style>
 </head>
 <body>
-    <div class="body-bg container-fluid w-100 h-100 pb-5">
-        <div class="container w-50 pt-5" aria-hidden="true"></i>
-            <form action="config.php" method="post" class="bg-white container w-75 shadow p-5 text-center mb-5">
+    <div class="body-bg container-fluid w-100 h-100 pb-5 d-flex justify-content-center">
+        <div class="col-md-4 col-sm-8 my-5" aria-hidden="true"></i>
+            <form action="config.php" method="post" class="bg-white shadow p-5 text-center mb-5">
                 <?php
                 if (isset($_SESSION['inputError'])) {
                     echo $_SESSION['inputError'];
