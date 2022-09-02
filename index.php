@@ -1,19 +1,18 @@
 <?php
+
+    require_once('env.config.php');
+
     class Connection {
-        public  $server = 'localhost';
-        public $username = 'root';
-        public $password = '';
-        public $dbName = 'instagram';
         public $connect;
         public function __construct()
         {
-            $this->connect = new mysqli($this->server, $this->username, $this->password, $this->dbName);
+            $this->connect = new mysqli($_ENV['SERVER'], $_ENV['USERNAME'], '', $_ENV['DB']);
             if ($this->connect->connect_error) {
                 header('Location: signup.php');
                 $_SESSION['connectError'] = 'Error! No connection';
             }
             else{
-                echo '';
+                echo 'Connected to Database';
             }  	
         }
 

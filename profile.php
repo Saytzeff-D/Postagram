@@ -1,6 +1,7 @@
 <?php
+    include_once('env.config.php');
     session_start();
-    $connnection = new mysqli('localhost', 'root', '', 'instagram');
+    $connnection = new mysqli($_ENV['SERVER'], $_ENV['USERNAME'], '', $_ENV['DB']);
 
     $user_id = $_SESSION['passId'];
     if ($user_id == '') {
