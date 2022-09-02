@@ -21,9 +21,9 @@
     </style>
 </head>
 <body>
-    <div class="body-bg container-fluid w-100 h-100">
-        <div class="container w-50 pt-3 pb-1">
-            <form action="config.php" method="post" class="bg-white container w-75 shadow p-5 text-center mb-5" enctype="multipart/form-data">
+    <div class="body-bg container-fluid w-100 h-100 d-flex justify-content-center">
+        <div class="col-md-6 col-sm-8 pt-3 pb-1">
+            <form action="config.php" method="post" class="bg-white shadow p-5 text-center mb-5" enctype="multipart/form-data">
                 <h3 class="text-success">
                 <?php 
                     if (isset($_SESSION['inputError'])) {
@@ -40,23 +40,23 @@
                     }
                 ?>
                 </h3>
-                <p class="display-3" style="font-family: Blackadder ITC;">Instagram</p>
-                <h3>Sign Up</h3>
+                <p class="h1" style="font-family: cursive;">Postagram</p>
+                <h5>Sign Up</h5>
                 <div class="form-row pt-2 col">
-                    <div class="form-group col-6">
+                    <div class="form-group col-md-6">
                         <input type="text" placeholder="Surame" name="sname" class="form-control" data-error="Required">
                     </div>
-                    <div class="form-group col-6">
+                    <div class="form-group col-md-6">
                         <input type="text" placeholder="Last Name" name="lname" class="form-control">
                     </div>
                 </div>
-                <div class="form-group pt-2 col">
+                <div class="form-group pt-2 col-12">
                     <input type="email" placeholder="Email Address" name="email" name="Email" class="form-control">
                 </div>
-                <div class="form-group pt-2 col">
+                <div class="form-group pt-2 col-12">
                     <input type="text" placeholder="Phone Number" name="phoneNum" class="form-control">
                 </div>
-                <div class="form-group pt-2 col">
+                <div class="form-group pt-2 col-12">
                     <input type="password" placeholder="Create Password" name="pword" class="form-control">
                 </div>
                 <button type="submit" name="submit" class="btn btn-success btn-block">Create New Account</button>

@@ -18,8 +18,8 @@
     </style>
 </head>
 <body>
-    <div class="body-bg container-fluid w-100 h-100">
-        <div class="container w-50 p-5">
+    <div class="body-bg container-fluid w-100 h-100 d-flex justify-content-center">
+        <div class="col-md-6 py-5">
         <form action="config.php" class="bg-white container shadow p-5 mb-5 mt-3 text-center" method="post">
                     <?php
                         if (isset($_SESSION['inputError'])) {
@@ -35,7 +35,7 @@
                             echo $_SESSION['pwordNtMatch'];
                         }
                     ?>
-            <p class="text-center h2" style="font-family: nautilus_pompiliusregular;">Instagram</p>
+            <p class="text-center h2" style="font-family: nautilus_pompiliusregular;">Postagram</p>
             <p class="text-muted text-center">Change password</p>
             <input type="text" placeholder="Email Address or Mobile" name="email" class="form-control m-3">
             <input type="password" placeholder="New Password" name="newPword" class="form-control m-3">
